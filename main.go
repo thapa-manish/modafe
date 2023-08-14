@@ -33,7 +33,7 @@ func main() {
 
 	var output = make(types.JSON)
 	decoder.NewDecoder().Decode(schema, output)
-	outData, err := json.MarshalIndent(output, "", "  ")
+	outData, err := json.MarshalIndent([]types.JSON{output}, "", "  ")
 	if err != nil {
 		panic(err)
 	}

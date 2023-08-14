@@ -19,9 +19,6 @@ type Attribute struct {
 	L    []*Attribute          `type:"list"`
 	M    map[string]*Attribute `type:"map"`
 }
-type Number interface {
-	int64 | float64
-}
 
 type AttributeMap = map[string]*Attribute
 type JSON = map[string]interface{}
