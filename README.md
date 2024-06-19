@@ -8,3 +8,5 @@ Converts the schema json to JSON object.
 
 Assumptions:
 - program is expecting single row of data in schema json file
+
+-added sonar cube scanner to the repo
